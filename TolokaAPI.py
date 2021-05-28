@@ -91,7 +91,7 @@ def closePool(poolNum,key,sandbox):
     ss= json.loads(resp.text)
     return ss
 
-def GetResults(poolNum,key,sandbox):
+def getResults(poolNum,key,sandbox):
     '''
     Получение результатов работы (ДОБАВЛЕНА СПЕЦИФИКА AIR)
         poolNum = номер пула из строки браузера, 
@@ -158,7 +158,7 @@ def getTaskSuiteList(poolNum,key,sandbox):
     return ss
 
 
-def CreateTaskSuit(TaskSuite,key,sandbox):
+def createTaskSuit(TaskSuite,key,sandbox):
     '''
     Создание и загрузка списка страниц заданий
     TaskSuite = страницы заданий,
@@ -176,7 +176,7 @@ def CreateTaskSuit(TaskSuite,key,sandbox):
     return ss
 
 
-def GenerateTaskPages(pool_id,overlap,kolInPage, URLS):
+def generateTaskPages(pool_id,overlap,kolInPage, URLS):
     '''
     Создание объекта TaskSuite для LIZAALERT_AIR из массива ссылок
     pool_id = номер пула полученый при создании нового пула,
